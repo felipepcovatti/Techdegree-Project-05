@@ -1,0 +1,77 @@
+nav {
+    padding: 10px;
+    text-transform: uppercase;
+
+    @include media($firstBrake) {
+    	@include margins($mediumMargin);
+
+    	margin-bottom: 40px;
+    }
+
+    @include media($secondBrake) {
+    	@include margins($bigMargin);
+
+    	padding: 0;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+ nav ul {
+    font-weight: 700;
+    list-style-type: none;
+    @extend %flexboxFirstBrake;
+    @include media($firstBrake) {
+    	justify-content: space-around;
+    	flex-wrap: wrap;
+    }
+
+    @include media($secondBrake) {
+    	flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+}
+
+nav ul li {
+
+    padding: 14px;
+
+    &.name {
+
+	    display: block;
+	    font-size: 1.5em;
+	    padding-top: 10px;
+	    margin-bottom: 5px;
+	    letter-spacing: 2px;
+	    text-transform: none;
+
+	    @include media($firstBrake) {
+	    	margin-top: 30px;
+        	flex-basis: 100%;
+	    }
+
+	    @include media($secondBrake) {
+		    display: block;
+	        margin-right: auto;
+	        margin-top: 0;
+	        flex-basis: auto;
+	        padding-right: 0;
+	        padding-left: 0;
+	    }
+
+    }
+
+    @include media($secondBrake) {
+    	padding-left: 30px;
+        padding-right: 30px;
+
+        &:last-child {
+        	padding-right: 0;
+        }
+    }
+
+}
+

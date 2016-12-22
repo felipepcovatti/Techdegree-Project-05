@@ -1,0 +1,25 @@
+a {
+    &.social {
+    display: inline-block;
+    text-indent: -9999px;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    opacity: .5;
+    transition: all .5s;
+    }
+
+    &.behance {
+    background-image: url(https://a3.behance.net/img/site/favicon.ico?cb=396888926);
+    }
+
+    &.linkedin {
+    background-image: url(https://static.licdn.com/scds/common/u/images/logos/favicons/v1/16x16/favicon.ico);
+    }
+
+    &.social:hover {
+    opacity: 1;
+    }
+
+}

@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    color: #7d7d7d;
+    background: #f3f3f3;
+
+    @include media($secondBrake) {
+
+        max-width: 1200px;
+        margin: 0 auto;
+
+    }
+}
+
+h1 {
+    font-size: 1em;
+    margin-bottom: 15px;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.25em;
+    margin-bottom: 9px;
+}
+
+a {
+    text-decoration: none;
+    color: #999;
+    transition: all .5s;
+
+    &:hover {
+    	color: #555;
+    }
+}
+

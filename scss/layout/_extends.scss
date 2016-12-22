@@ -1,0 +1,44 @@
+%section_sizes {
+	// margin: 0 15px 65px;
+	margin-left: $smallMargin;
+	margin-right: $smallMargin;
+	margin-bottom: $smallGap;
+    line-height: 1.5;
+}
+
+%flexbox {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+%flexboxFirstBrake {
+	@include media($firstBrake) {
+
+	  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	  display: -ms-flexbox;      /* TWEENER - IE 10 */
+	  display: -webkit-flex;     /* NEW - Chrome */
+	  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+	}
+}
+
+
+%clearfix {
+
+	@include media($firstBrake) {
+		&:after {
+			content: " ";
+	    /* Older browser do not support empty content */
+	        visibility: hidden;
+	        display: block;
+	        height: 0;
+	        clear: both;
+		}
+
+	}
+
+}

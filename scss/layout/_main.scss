@@ -1,0 +1,187 @@
+#portfolio, #contact, #skillssection {
+	
+	@extend %section_sizes;
+
+}
+
+.profile-txt {
+
+	@include media($firstBrake) {
+		font-size: 1.2em;
+        padding-right: 18px;
+        text-align: left;
+    }
+}
+
+
+#contact p {
+	@include media($firstBrake) {
+		font-size: 1.2em;
+		max-width: 70%;
+        margin: auto;
+	}
+}
+
+#portfolio div.project, .card {
+
+	@include media($firstBrake) {
+        flex-basis: 48%;
+	}
+}
+
+#portfolio div.project {
+	@include media($secondBrake) {
+		flex-basis: 31.5%;
+		transition: all .5s;
+
+		&:hover {
+			transform: scale(1.03);
+		}
+	}
+}
+
+body #portfolio, body #skillssection {
+	@include media($firstBrake) {
+		margin-bottom: $mediumGap;
+	}
+}
+
+body #portfolio, body #skillssection, body #contact {
+	@include media($firstBrake) {
+		@include margins($mediumMargin);
+	}
+
+	@include media($secondBrake) {
+		 @include margins($bigMargin)
+	}
+}
+
+body #contact {
+	@include media($firstBrake) {
+		margin-bottom: 60px;
+	}
+
+	@include media($secondBrake) {
+		margin-bottom: 70px;
+	}
+}
+
+.projects-wrap {
+	@extend %flexboxFirstBrake;
+	@include media($firstBrake) {
+		  flex-wrap: wrap;
+		  justify-content: space-between;
+	}
+
+}
+
+div#portfolio p {
+    padding: 0 12px;
+    letter-spacing: -.5px;
+}
+
+
+
+.skillsset {
+
+    @extend %flexbox;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    @include media($firstBrake) {
+
+    	flex-wrap: nowrap;
+    	justify-content: space-between;
+    }
+}
+
+.flex {
+	@extend %flexbox;
+	margin:  0 auto;
+	flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 100%;
+    text-align: left;
+    transition: all .5s;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.set1 .card {
+    margin-bottom: 0;
+}
+
+.skillslevel li span {
+    width: 10%;
+    display: block;
+    height: 100%;
+    overflow: visible;
+}
+
+ul.skillslevel {
+    margin-top: 5px;
+}
+
+.skillslevel li span {
+    background-color: #537fbc;
+
+}
+
+ul.skills, ul.skillslevel {
+    padding: 0;
+    text-align: center;
+}
+
+.skillslevel li {
+    display: inline-block;
+    color: #fff;
+}
+
+.skillslevel li span {
+    padding: 5px 10px;
+}
+
+
+
+.skillslevel li span {
+    margin: 2px 0;
+}
+
+.skillslevel li {
+    display: block;
+    text-align: left;
+    background: #a1a7af;
+}
+
+
+
+
+#portfolio img {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    margin: 20px 0;
+    line-height: 35px;
+}
+
+#contact {
+    margin-bottom: 50px;
+}
+
+#contact > p, .card, #portfolio img {
+    margin-top: 30px;
+}
+
+div#contact ul li {
+    display: inline-block;
+    list-style: none;
+    margin-top: 40px;
+}

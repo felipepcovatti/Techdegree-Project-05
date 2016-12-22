@@ -1,0 +1,37 @@
+header {
+
+	@extend %section_sizes;
+
+}
+
+body header {
+
+	@include media($firstBrake) {
+
+		margin-bottom: $mediumGap;
+		@include margins($mediumMargin);
+	}
+
+	@include media($secondBrake) {
+
+		@include margins($bigMargin);
+	}
+}
+
+
+header#intro-about {
+	@extend %clearfix;
+}
+
+
+header img {
+    margin: 20px 0 25px;
+    width: 68.96%;
+
+    @include media($firstBrake) {
+    	margin: 0;
+        margin-left: 20px;
+        float: right;
+        max-width: 40%;
+    }
+}
