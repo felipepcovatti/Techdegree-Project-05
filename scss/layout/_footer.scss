@@ -1,5 +1,5 @@
 footer {
-    border-top: 2px solid #adadad;
+    border-top: 2px solid $Gray;
     padding-top: 25px;
 
     @extend %section_sizes;
@@ -25,10 +25,8 @@ body footer {
 }
 
 footer ul {
-	text-transform: uppercase;
-	display: -ms-flexbox;
-/* TWEENER - IE 10 */
-    display: flex;
+	text-transform: $transformTxt;
+	@extend %flexbox;
     margin: 0 auto;
     flex-wrap: wrap;
     min-height: 30px;
@@ -57,7 +55,7 @@ footer ul li.sections-nav {
     }
 
     footer ul li.sections-nav {
-    display: inline;
+        display: inline;
     }
 
     .sections-nav ul li:last-child, 

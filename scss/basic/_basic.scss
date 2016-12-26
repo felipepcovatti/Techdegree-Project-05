@@ -13,9 +13,9 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    font-family: 'Roboto',sans-serif;
-    color: #7d7d7d;
-    background: #f3f3f3;
+    font-family: $Roboto;
+    color: $Dark-grey;
+    background: $Very-light-gray;
 
     @include media($secondBrake) {
 
@@ -26,24 +26,24 @@ body {
 }
 
 h1 {
-    font-size: 1em;
+    font-size: $smallFont;
     margin-bottom: 15px;
     padding-top: 20px;
-    text-transform: uppercase;
+    text-transform: $transformTxt;
 }
 
 h2 {
-    font-size: 1.25em;
+    font-size: $bigFont;
     margin-bottom: 9px;
 }
 
 a {
     text-decoration: none;
-    color: #999;
+    color: $Dusty-Gray;
     transition: all .5s;
 
     &:hover {
-    	color: #555;
+    	color: $Very-dark-gray;
     }
 }
 

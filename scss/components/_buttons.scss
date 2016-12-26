@@ -23,3 +23,14 @@ a {
     }
 
 }
+
+.close-btn {
+
+    font-size: $xSmallFont;
+    cursor: pointer;
+
+    @extend %dontSelect;
+
+    display: none;
+
+}

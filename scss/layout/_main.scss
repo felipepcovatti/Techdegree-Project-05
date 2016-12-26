@@ -7,7 +7,7 @@
 .profile-txt {
 
 	@include media($firstBrake) {
-		font-size: 1.2em;
+		font-size: $mediumFont;
         padding-right: 18px;
         text-align: left;
     }
@@ -16,7 +16,7 @@
 
 #contact p {
 	@include media($firstBrake) {
-		font-size: 1.2em;
+		font-size: $mediumFont;
 		max-width: 70%;
         margin: auto;
 	}
@@ -129,7 +129,7 @@ ul.skillslevel {
 }
 
 .skillslevel li span {
-    background-color: #537fbc;
+    background-color: $Steel-blue;
 
 }
 
@@ -140,7 +140,7 @@ ul.skills, ul.skillslevel {
 
 .skillslevel li {
     display: inline-block;
-    color: #fff;
+    color: $White;
 }
 
 .skillslevel li span {
@@ -156,7 +156,7 @@ ul.skills, ul.skillslevel {
 .skillslevel li {
     display: block;
     text-align: left;
-    background: #a1a7af;
+    background: $Dark-grayish-blue;
 }
 
 
